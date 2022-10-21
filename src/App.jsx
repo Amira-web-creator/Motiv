@@ -1,9 +1,9 @@
 import React from "react";
 import {  Routes, Route } from "react-router-dom";
 
-import { TopNavbar, LeftNavbar, Cars, MiddleContent } from "./myComponents";
+import { TopNavbar, LeftNavbar, Cars, MiddleContent , Filter } from "./myComponents";
 
-import { cars } from "./data/data";
+import { cars  } from "./data/data";
 
 const App = () => {
   return (

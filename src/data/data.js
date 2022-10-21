@@ -8,6 +8,16 @@ import car1 from "../assets/car1.png";
 import car2 from "../assets/car2.png";
 import car3 from "../assets/car3.png";
 
+import cars1 from "../assets/cars1.jpg";
+import cars2 from "../assets/cars2.jpg";
+import cars3 from "../assets/cars3.jpg";
+import cars4 from "../assets/cars4.jpg";
+import cars5 from "../assets/cars5.jpg";
+import cars6 from "../assets/cars6.jpg";
+import cars7 from "../assets/cars7.jpg";
+import cars8 from "../assets/cars8.jpg";
+import cars9 from "../assets/cars9.jpg";
+
 const ads = {
   items: [
     {
@@ -81,7 +91,7 @@ const ranges = {
   ],
 };
 
-const cars = {
+const carsHome = {
   items: [
     {
       id: "0M0x1",
@@ -130,13 +140,18 @@ const cars = {
       fav: true,
       text: "coupe",
     },
+  ],
+};
+
+const cars = {
+  items: [
     {
       id: "0M0x4",
       title: "Mini Cooper",
       text: "MEN Running Shoes",
       howRecomended: "65%",
       btn: "Buy Now",
-      img: car1,
+      img: cars2,
       kilos: "132",
       price: "38",
       color: "bg-gold-500",
@@ -152,7 +167,7 @@ const cars = {
       text: "MEN Running Shoes",
       howRecomended: "45%",
       btn: "Buy Now",
-      img: car2,
+      img: cars3,
       kilos: "130",
       price: "32",
       color: "bg-indigo-100",
@@ -167,7 +182,7 @@ const cars = {
       text: "MEN Running Shoes",
       howRecomended: "45%",
       btn: "Buy Now",
-      img: car3,
+      img: cars4,
       kilos: "130",
       price: "28",
       color: "bg-pink-100",
@@ -182,7 +197,7 @@ const cars = {
       text: "MEN Running Shoes",
       howRecomended: "65%",
       btn: "Buy Now",
-      img: car1,
+      img: cars5,
       kilos: "132",
       price: "38",
       color: "bg-gold-500",
@@ -198,7 +213,7 @@ const cars = {
       text: "MEN Running Shoes",
       howRecomended: "45%",
       btn: "Buy Now",
-      img: car2,
+      img: cars6,
       kilos: "130",
       price: "32",
       color: "bg-indigo-100",
@@ -214,7 +229,7 @@ const cars = {
       text: "MEN Running Shoes",
       howRecomended: "45%",
       btn: "Buy Now",
-      img: car3,
+      img: cars7,
       kilos: "130",
       price: "28",
       color: "bg-pink-100",
@@ -226,4 +241,4 @@ const cars = {
   ],
 };
 
-export { cars, ranges, ads };
+export { cars, ranges, ads, carsHome };

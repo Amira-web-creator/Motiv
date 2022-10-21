@@ -19,7 +19,7 @@ const CarsProducts = ({
         "justify-items-center rounded-xl bg-white py-4 px-5 transition-all duration-700 ease-in-out w-full hover:scale-105`}
       >
         <div className="grid items-start justify-items-start xl:justify-center xl:justify-items-center">
-          <div className="text-black w-full filter drop-shadow-sm text-sm font-medium flex justify-between">
+          <div className="text-black w-full filter drop-shadow-sm text-sm font-medium flex justify-between lg:justify-center">
             <span className="mr-1">{title}</span>
             <div>
               {fav == true && (
@@ -39,7 +39,7 @@ const CarsProducts = ({
             <img
               src={img}
               alt={`img/item-img/${id}`}
-              className="transitions-theme hover:-rotate-12 w-60 h-30"
+              className="transitions-theme hover:-rotate-12 w-50  max-h-20 overflow-hidden"
             />
           </div>
 

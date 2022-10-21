@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const LeftNavbar = () => {
   const [open, setOpen] = useState(true);
   const Menus = [
-    { title: "Dashboard", src: "dashboard icon",link:"/" },
-    { title: "car", src: "car" , link:"/cars" },
+    { title: "Dashboard", src: "dashboard icon", link: "/" },
+    { title: "car", src: "car", link: "/cars" },
     { title: "settings", src: "settings" },
     { title: "logout ", src: "logout" },
   ];
@@ -29,7 +29,7 @@ const LeftNavbar = () => {
             }`}
           />
           <span className={`${!open && "hidden"} origin-left duration-200`}>
-            Motive
+            <Link to="/"> Motive</Link>
           </span>
 
           <h1
