@@ -5,6 +5,7 @@ import {
   MixedBlock,
   Sales,
   RangesBlock,
+  Cars,
 } from "./myComponents";
 
 import { ranges, cars, ads } from "./data/data";
@@ -24,6 +25,7 @@ const App = () => {
           <RangesBlock endpoint={ranges} />
           <MixedBlock endpoint={ads} />
           <Sales endpoint={cars} />
+          <Cars/>
         </div>
       </div>
     </main>
