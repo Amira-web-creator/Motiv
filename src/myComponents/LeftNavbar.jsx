@@ -1,15 +1,15 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const LeftNavbar = () => {
   const [open, setOpen] = useState(true);
   const Menus = [
-    { title: "Dashboard", src: "dashboard icon" },
-    { title: "car", src: "car" },
+    { title: "Dashboard", src: "dashboard icon",link:"/" },
+    { title: "car", src: "car" , link:"/cars" },
     { title: "settings", src: "settings" },
     { title: "logout ", src: "logout" },
   ];
   return (
     <>
-
       <div
         className={` ${
           open ? "w-72" : "w-20 "
@@ -40,7 +40,7 @@ const LeftNavbar = () => {
         </div>
         <ul className="menu pt-6">
           {Menus.map((Menu, index) => (
-            <li 
+            <li
               key={index}
               className={`flex hover:bg-slate-100 rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-800 text-sm items-center gap-x-4 
               ${Menu.gap ? "mt-9" : "mt-2"} ${
@@ -49,7 +49,7 @@ const LeftNavbar = () => {
             >
               <img src={`./src/assets/${Menu.src}.png`} />
               <span className={`${!open && "hidden"} origin-left duration-200`}>
-                {Menu.title}
+                <Link to={Menu.link}> {Menu.title}</Link>
               </span>
             </li>
           ))}

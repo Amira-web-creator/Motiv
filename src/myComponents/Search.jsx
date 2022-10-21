@@ -25,7 +25,7 @@ const Search = () => {
           <input
             type="search"
             id="default-search"
-            className="block h-10 p-4 pl-10 w-full bg-gray-100 rounded-md"
+            className="block h-10 p-4 pl-10 w-full bg-gray-50 rounded-md"
             placeholder="Search or type"
             required=""
           />

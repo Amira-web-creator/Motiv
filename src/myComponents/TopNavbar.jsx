@@ -13,7 +13,10 @@ const TopNavbar = () => {
             <img src="assets/notifications.svg" className="w-10 h-5" />
           </div>
           <div className="user ">
-            <img src="assets/user.jpg" className="rounded-full max-w-full  h-auto" />
+            <img
+              src="assets/user.jpg"
+              className="rounded-full max-w-full  h-auto"
+            />
           </div>
         </div>
       </div>

@@ -1,34 +1,30 @@
 import React from "react";
-import {
-  TopNavbar,
-  LeftNavbar,
-  MixedBlock,
-  Sales,
-  RangesBlock,
-  Cars,
-} from "./myComponents";
+import {  Routes, Route } from "react-router-dom";
 
-import { ranges, cars, ads } from "./data/data";
+import { TopNavbar, LeftNavbar, Cars, MiddleContent } from "./myComponents";
+
+import { cars } from "./data/data";
 
 const App = () => {
- 
   return (
-    <main className="flex">
-      <div>
-        <LeftNavbar />
-      </div>
-      <div className="flex-1">
+    <>
+      <main className="flex">
         <div>
-          <TopNavbar />
+          <LeftNavbar />
         </div>
-        <div className="middle bg-gray-100 pt-5">
-          <RangesBlock endpoint={ranges} />
-          <MixedBlock endpoint={ads} />
-          <Sales endpoint={cars} />
-          <Cars/>
+        <div className="flex-1">
+          <div>
+            <TopNavbar />
+          </div>
+          <div className="middle h-screen bg-gray-50 pt-5">
+            <Routes>
+              <Route path="/" element={<MiddleContent />}></Route>
+              <Route path="/cars" element={<Cars endpoint={cars} />}></Route>
+            </Routes>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </>
   );
 };
 

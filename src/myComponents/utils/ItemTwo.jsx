@@ -1,19 +1,5 @@
-import { StarIcon, ShoppingBagIcon } from "@heroicons/react/24/solid";
-
 import React from "react";
-
-const ItemTwo = ({
-  id,
-  color,
-  title,
-  text,
-  btn,
-  rating,
-  price,
-  img,
-  kilos,
-  howRecomended,
-}) => {
+const ItemTwo = ({ id, color, title, price, img, kilos, howRecomended }) => {
   return (
     <>
       <div
