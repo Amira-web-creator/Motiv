@@ -20,6 +20,7 @@ const Sales = ({ mycars }) => {
             type={item.type}
             home={item.home}
             color={item.color}
+            kilos={item.kilos}
             howRecomended={item.howRecomended}
           />
         ))}

@@ -17,8 +17,8 @@ const CarsProducts = ({
         className={`relative grid items-center 
         "justify-items-center rounded-xl bg-white py-4 px-5 transition-all duration-700 ease-in-out w-full hover:scale-105`}
       >
-        <div className="grid items-start justify-items-start ">
-          <div className="text-black w-full filter drop-shadow-sm text-sm font-medium flex justify-between lg:justify-center">
+        <div className="grid items-start justify-items-start lg:justify-center">
+          <div className="text-black w-full filter drop-shadow-sm text-sm font-medium flex justify-between ">
             <span className="mr-1">{title}</span>
             <div>
               {fav == true && (

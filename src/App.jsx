@@ -12,6 +12,7 @@ import {
 
 const App = () => {
   const [mycars, setCars] = useState([]);
+  
   useEffect(() => {
     const fetchCars = async () => {
       const response = await fetch(
@@ -51,7 +52,7 @@ const App = () => {
         </div>
         <div className="flex-1">
           <div>
-            <TopNavbar />
+            <TopNavbar mycars={mycars} />
           </div>
           <div className="middle h-screen bg-gray-50 pt-5">
             <Routes>

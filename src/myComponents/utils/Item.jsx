@@ -9,7 +9,6 @@ const Item = ({
   title,
   img,
   hoverColor,
-  trailColor,
   percentage,
 }) => {
   return (
