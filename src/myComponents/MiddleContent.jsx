@@ -1,13 +1,13 @@
 import React from "react";
 import { MixedBlock, Sales, RangesBlock } from "../myComponents";
-import { ranges, carsHome, ads } from "../data/data";
+import { ranges, ads } from "../data/data";
 
-const MiddleContent = () => {
+const MiddleContent = ({ mycars }) => {
   return (
     <div>
       <RangesBlock endpoint={ranges} />
       <MixedBlock endpoint={ads} />
-      <Sales endpoint={carsHome} />
+      <Sales mycars={mycars} />
     </div>
   );
 };
