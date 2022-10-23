@@ -1,4 +1,3 @@
-import React from "react";
 import Filter from "../myComponents/utils/Filter";
 import CarsProducts from "./utils/CarsProducts";
 
@@ -9,7 +8,7 @@ const Cars = ({ mycars }) => {
         <h1 className="font-bold text-xl">Bokking</h1>
         <div className="flex justify-between">
           <div>
-            <Filter />
+            <Filter  />
           </div>
           <div className="flex justify-between">
             <img

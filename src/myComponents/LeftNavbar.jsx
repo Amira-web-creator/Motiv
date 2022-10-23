@@ -5,7 +5,7 @@ const LeftNavbar = () => {
   const Menus = [
     { title: "Dashboard", src: "dashboard icon", link: "/" },
     { title: "car", src: "car", link: "/cars" },
-    { title: "settings", src: "settings" },
+    { title: "Settings", src: "Settings" },
     { title: "logout ", src: "logout" },
   ];
   return (
@@ -40,7 +40,7 @@ const LeftNavbar = () => {
         </div>
         <ul className="menu pt-6">
           {Menus.map((Menu, index) => (
-            <Link to={Menu.link}>
+            <Link key={index} to={Menu.link}>
               <li
                 key={index}
                 className={`flex hover:bg-slate-100 rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-800 text-sm items-center gap-x-4 

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CarsProducts from "./utils/CarsProducts";
 
-
 const Search = ({ mycars }) => {
   const [input, setInput] = useState("");
   const [output, setOutput] = useState([]);
@@ -11,7 +10,6 @@ const Search = ({ mycars }) => {
     mycars.filter((val) => {
       if (val.title.toLowerCase().includes(input.toLowerCase())) {
         setOutput((output) => [...output, val]);
-        mycars=mycars
       }
     });
   }, [input]);
@@ -46,9 +44,8 @@ const Search = ({ mycars }) => {
           />
         </div>
       </form>
-<div className="grid grid-cols-4 mt-5">
-  
-      {output.map((item) => (
+      <div className="grid grid-cols-4 mt-5">
+        {output.map((item) => (
           <CarsProducts
             key={item.id}
             title={item.title}
@@ -60,15 +57,8 @@ const Search = ({ mycars }) => {
             type={item.type}
           />
         ))}
-       </div>
       </div>
-   
-  
-
-      
-
-
-   
+    </div>
   );
 };
 
