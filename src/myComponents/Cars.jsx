@@ -9,20 +9,16 @@ const Cars = ({ mycars, query }) => {
     return car.title.toLowerCase().includes(query);
   };
 
-  const checkSelect= (car) => {
-
-
+  const checkSelect = (car) => {
     if (filterTextValue === "all") {
       return mycars;
     } else if (filterTextValue === car.text) {
       return filterTextValue === car.text;
     }
-
   };
 
   let filteredNumbers = mycars.filter(function (car) {
-   return checkQuery(car) && checkSelect(car)
-
+    return checkQuery(car) && checkSelect(car);
   });
 
   const onFilterValueSelected = (filterValue) => {
