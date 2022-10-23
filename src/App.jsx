@@ -12,6 +12,8 @@ import {
 
 const App = () => {
   const [mycars, setCars] = useState([]);
+  const [selectedMode, setSelectedMode] = useState("");
+
   
   useEffect(() => {
     const fetchCars = async () => {
@@ -52,12 +54,12 @@ const App = () => {
         </div>
         <div className="flex-1">
           <div>
-            <TopNavbar mycars={mycars} />
+            <TopNavbar mycars={mycars} setSelectedMode={setSelectedMode} />
           </div>
           <div className="middle h-screen bg-gray-50 pt-5">
             <Routes>
               <Route path="/" element={<MiddleContent mycars={mycars} />}></Route>
-              <Route path="/cars" element={<Cars mycars={mycars} />}></Route>
+              <Route path="/cars" element={<Cars mycars={mycars} selectedMode={selectedMode} />}></Route>
             </Routes>
           </div>
         </div>
