@@ -3,7 +3,7 @@ import ItemTwo from "./utils/ItemTwo";
 
 const Sales = ({ mycars }) => {
   return (
-    <div className="car-container">
+    <div className="car-container mt-5">
       <div
         className={`grid items-center justify-items-center gap-7 lg:gap-5 
     grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 sm:grid-cols-1`}

@@ -21,7 +21,7 @@ const ItemTwo = ({ id, title, price, img, kilos, howRecomended, home }) => {
               <img
                 src={`src/assets/${img}`}
                 alt={`img/item-img/${id}`}
-                className="transitions-theme hover:-rotate-12 w-60 h-30"
+                className="transitions-theme hover:-rotate-12 max-w-full h-auto"
               />
             </div>
             <h1 className="text-black text-sm  font-medium filter drop-shadow-sm ">
