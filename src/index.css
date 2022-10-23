@@ -80,12 +80,12 @@
   .transitions-theme {
     @apply transition-all duration-700 ease-in-out cursor-pointer;
   }
-  .menu li:nth-child(4) {
+  .menu a:nth-child(4) {
     position: absolute;
     bottom: 10px;
     width: 85%;
   }
-  .menu li:nth-child(3) {
+  .menu a:nth-child(3) {
     position: absolute;
     bottom: 40px;
     width: 85%;

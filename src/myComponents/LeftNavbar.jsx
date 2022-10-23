@@ -40,18 +40,22 @@ const LeftNavbar = () => {
         </div>
         <ul className="menu pt-6">
           {Menus.map((Menu, index) => (
-            <li
-              key={index}
-              className={`flex hover:bg-slate-100 rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-800 text-sm items-center gap-x-4 
+            <Link to={Menu.link}>
+              <li
+                key={index}
+                className={`flex hover:bg-slate-100 rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-800 text-sm items-center gap-x-4 
               ${Menu.gap ? "mt-9" : "mt-2"} ${
-                index === 0 && "bg-light-white"
-              } `}
-            >
-              <img src={`./src/assets/${Menu.src}.png`} />
-              <span className={`${!open && "hidden"} origin-left duration-200`}>
-                <Link to={Menu.link}> {Menu.title}</Link>
-              </span>
-            </li>
+                  index === 0 && "bg-light-white"
+                } `}
+              >
+                <img src={`./src/assets/${Menu.src}.png`} />
+                <span
+                  className={`${!open && "hidden"} origin-left duration-200`}
+                >
+                  {Menu.title}
+                </span>
+              </li>
+            </Link>
           ))}
         </ul>
       </div>
