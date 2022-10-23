@@ -1,10 +1,8 @@
 import React from "react";
 
-const TopNavbar = ({ setSelectedMode }) => {
-  const bb = (e) => {
-  
-    setSelectedMode(e)
-
+const TopNavbar = ({ setQuery }) => {
+  const getValue = (e) => {
+    setQuery(e);
   };
 
   return (
@@ -36,7 +34,7 @@ const TopNavbar = ({ setSelectedMode }) => {
                   className="block h-10 p-4 pl-10 w-full bg-gray-50 rounded-md"
                   placeholder="Search or type"
                   required=""
-                  onChange={(e) => bb(e.target.value)}
+                  onChange={(e) => getValue(e.target.value)}
                 />
               </div>
             </form>

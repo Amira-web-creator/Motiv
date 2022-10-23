@@ -12,7 +12,7 @@ import {
 
 const App = () => {
   const [mycars, setCars] = useState([]);
-  const [selectedMode, setSelectedMode] = useState("");
+  const [query, setQuery] = useState("");
 
   
   useEffect(() => {
@@ -54,12 +54,12 @@ const App = () => {
         </div>
         <div className="flex-1">
           <div>
-            <TopNavbar mycars={mycars} setSelectedMode={setSelectedMode} />
+            <TopNavbar mycars={mycars} setQuery={setQuery} />
           </div>
           <div className="middle h-screen bg-gray-50 pt-5">
             <Routes>
               <Route path="/" element={<MiddleContent mycars={mycars} />}></Route>
-              <Route path="/cars" element={<Cars mycars={mycars} selectedMode={selectedMode} />}></Route>
+              <Route path="/cars" element={<Cars mycars={mycars} query={query} />}></Route>
             </Routes>
           </div>
         </div>
