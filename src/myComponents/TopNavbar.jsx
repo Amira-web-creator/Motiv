@@ -44,7 +44,7 @@ const TopNavbar = ({ setQuery }) => {
           <div className="notifications lg:mr-2 mr-5 mt-3">
             <img src="assets/notifications.svg" className="w-10 h-5" />
           </div>
-          <div className="user ">
+          <div className="user">
             <img
               src="assets/user.jpg"
               className="rounded-full max-w-full h-auto"

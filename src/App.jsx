@@ -14,7 +14,6 @@ const App = () => {
   const [mycars, setCars] = useState([]);
   const [query, setQuery] = useState("");
 
-  
   useEffect(() => {
     const fetchCars = async () => {
       const response = await fetch(
@@ -37,7 +36,6 @@ const App = () => {
           type: responseData[key].type,
           price: responseData[key].price,
           home: responseData[key].home,
-
         });
       }
 
@@ -48,21 +46,21 @@ const App = () => {
 
   return (
     <>
-      <main className="flex">
-        <div>
-          <LeftNavbar />
-        </div>
-        <div className="flex-1">
-          <div>
-            <TopNavbar mycars={mycars} setQuery={setQuery} />
-          </div>
-          <div className="middle h-screen bg-gray-50 pt-5">
-            <Routes>
-              <Route path="/" element={<MiddleContent mycars={mycars} />}></Route>
-              <Route path="/cars" element={<Cars mycars={mycars} query={query} />}></Route>
-            </Routes>
-          </div>
-        </div>
+      <nav>
+        <LeftNavbar />
+      </nav>
+      <header>
+        <TopNavbar mycars={mycars} setQuery={setQuery} />
+      </header>
+
+      <main className="pt-5 bg-gray-50">
+        <Routes>
+          <Route path="/" element={<MiddleContent mycars={mycars} className="pt-5" />}></Route>
+          <Route
+            path="/cars"
+            element={<Cars mycars={mycars} query={query} />}
+          ></Route>
+        </Routes>
       </main>
     </>
   );

@@ -7,5 +7,3 @@ export { default as Sales } from "./Sales.jsx";
 export { default as Cars } from "./Cars.jsx";
 export { default as MiddleContent } from "./MiddleContent.jsx";
 export { default as Filter } from "../myComponents/utils/Filter";
-
-

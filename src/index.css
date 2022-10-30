@@ -10,6 +10,27 @@
     font-family: "Poppins", sans-serif;
   }
 
+  #root {
+    display: grid;
+    grid-template-areas:
+      "nav header header"
+      "nav main main";
+    grid-template-columns: auto 4fr;
+    grid-template-rows: 70px auto;
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+  }
+
   /* container */
   .car-container {
     @apply w-11/12 m-auto;

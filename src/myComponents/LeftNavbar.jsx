@@ -12,8 +12,8 @@ const LeftNavbar = () => {
     <>
       <div
         className={` ${
-          open ? "w-72" : "w-20 "
-        }  h-screen p-5  pt-8 relative duration-300`}
+          open ? "w-44" : "w-20 "
+        }  h-screen p-5 pt-8 relative duration-300`}
       >
         <img
           src="./src/assets/control.png"
