@@ -157,3 +157,24 @@
     color: #000;
   }
 }
+
+@media (max-width: 550px) {
+  #root {
+    display: block;
+    grid-template-areas:
+      "nav nav nav"
+      "header header header"
+      "main main main";
+
+    grid-template-columns: 1fr !important;
+  }
+
+  .menu a:nth-child(4) {
+    position: relative;
+    bottom: 10px;
+  }
+  .menu a:nth-child(3) {
+    position: relative;
+    bottom: 0;
+  }
+}

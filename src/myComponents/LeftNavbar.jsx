@@ -12,12 +12,12 @@ const LeftNavbar = () => {
     <>
       <div
         className={` ${
-          open ? "w-44" : "w-20 "
-        }  h-screen p-5 pt-8 relative duration-300`}
+          open ? "sm:w-max w-44 " : "sm:w-full w-20  "
+        }   sm:h-fit h-screen p-5 pt-8 relative duration-300`}
       >
         <img
           src="./src/assets/control.png"
-          className={`absolute cursor-pointer -right-3 top-14 w-7 border-dark-purple
+          className={`absolute cursor-pointer -right-3 top-14 w-7 border-dark-purple sm:hidden
   ${!open && "rotate-180"}`}
           onClick={() => setOpen(!open)}
         />
