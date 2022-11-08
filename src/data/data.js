@@ -4,10 +4,6 @@ import range from "../assets/range.svg";
 import breakfluid from "../assets/breakfluid.svg";
 import TierWear from "../assets/TierWear.svg";
 
-import car1 from "../assets/car1.png";
-import car2 from "../assets/car2.png";
-import car3 from "../assets/car3.png";
-
 const ads = {
   items: [
     {
@@ -80,7 +76,5 @@ const ranges = {
     },
   ],
 };
-
-
 
 export { ranges, ads };

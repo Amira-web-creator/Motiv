@@ -36,7 +36,7 @@ const CarsProducts = ({
           <div className="text-xs text-slate-400">{text}</div>
           <div className="flex items-center justify-center">
             <img
-              src={`src/assets/${img}`}
+              src={`assets/${img}`}
               alt={`img/item-img/${id}`}
               className="transitions-theme hover:-rotate-12 w-50  max-h-20 overflow-hidden"
             />

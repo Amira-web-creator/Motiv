@@ -19,7 +19,7 @@ const ItemTwo = ({ id, title, price, img, kilos, howRecomended, home }) => {
             </div>
             <div className="flex items-center justify-center ">
               <img
-                src={`src/assets/${img}`}
+                src={`assets/${img}`}
                 alt={`img/item-img/${id}`}
                 className="transitions-theme hover:-rotate-12 max-w-full h-auto"
               />

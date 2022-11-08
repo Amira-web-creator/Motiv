@@ -2,7 +2,6 @@ import React from "react";
 
 const Filter = (props) => {
   function onFilterChange(e) {
-    console.log(e.target.value);
     props.filterValueSelect(e.target.value);
   }
 
